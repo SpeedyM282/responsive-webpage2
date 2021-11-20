@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-items-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 90%;
+}
+
+.logo-text {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 24px;
+  color: #00AF8D;
+}
+
+.navbar-links-cont {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar-links-cont > p,
+.get-started-btn {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 17px;
+}
+
+.get-started-btn {
+  border: none;
+  background: #CFEBF9;
+}
+
+.hamburger-cont {
+  display: none;
+}
+
+/************* Navbar Ends *************/
+
+.body-part-wrapper {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.left-side-cont > h1 {
+  font-family: 'Harabara', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: #00AF8D;
+}
+
+.left-side-cont > p {
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.join-us-btn {
+  background-color: #00AF8D;
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  border: none;
+  color: #FFFFFF;
+}
+
+.read-more-btn {
+  background-color: #CFEBF9;
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.right-side-cont > img {
+  width: 100%;
+  height: 100%;
+}
+
+/************* Body Part Ended *************/
+
+
+/************* Hovers *************/
+
+.navbar-links-cont > p:hover,
+.get-started-btn:hover,
+.join-us-btn:hover,
+.read-more-btn:hover,
+.logo-text:hover,
+.hamburger-cont:hover {
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+
+.navbar-links-cont > p:hover {
+  opacity: 0.7;
+}
+
+.get-started-btn:hover {
+  color: #FFFFFF;
+  background-color: #00AF8D;
+}
+
+/* .read-more-btn:hover .join-us-btn {
+  transition: 0.7s;
+  background-color: #CFEBF9;
+  color: black;
+} */
+
+.read-more-btn:hover {
+  background-color: #00AF8D;
+  color: #FFFFFF;
+}
+
+.join-us-btn:hover + .read-more-btn {
+  transition: 0.7s;
+  background-color: #00AF8D;
+  color: #FFFFFF;
+}
+
+.join-us-btn:hover {
+  background-color: #CFEBF9;
+  color: black;
+} 
+
+/************* Media Queries *************/
+
+@media (min-width: 1700px) {
+
+  .navbar-links-cont {
+    flex-basis: 40%;
+  }
+
+  .get-started-btn {
+    width: 124px;
+    height: 43px;
+    border-radius: 12px;
+  }
+
+  .left-side-cont,
+  .right-side-cont {
+    flex-basis: 43%;
+  }
+
+  .left-side-cont > h1 {
+    width: 80%;
+    font-size: 90px;
+    line-height: 96px;
+  }
+
+  .left-side-cont > p {
+    width: 73%;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .join-us-btn {
+    width: 110px;
+    height: 50px;
+    border-radius: 10px;
+  }
+
+  .read-more-btn {
+    margin: 3% 2%;
+    width: 132px;
+    height: 50px;
+    border-radius: 10px;
+  }
+}
+
+
+@media (min-width: 950px) and (max-width: 1699px) {
+
+  .navbar-links-cont {
+    flex-basis: 70%;
+  }
+
+  .get-started-btn {
+    width: 114px;
+    height: 33px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+
+  .left-side-cont,
+  .right-side-cont {
+    width: 43%;
+  }
+
+  .left-side-cont > h1 {
+    width: 80%;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .left-side-cont > p {
+    width: 90%;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .join-us-btn {
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+  }
+
+  .read-more-btn {
+    margin: 3% 2%;
+    width: 122px;
+    height: 50px;
+    border-radius: 15px;
+  }
+}
+
+
+@media (min-width: 250px) and (max-width: 949px) {
+
+  .navbar-links-cont {
+    flex-basis: 70%;
+  }
+
+  .hamburger-cont {
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+  }
+
+  .navbar-links-cont {
+    display: none;
+  }
+
+  .body-part-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .left-side-cont,
+  .right-side-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    margin: 3% 0;
+  }
+
+  .left-side-cont > h1 {
+    width: 80%;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .left-side-cont > p {
+    width: 90%;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .btns-cont {
+    display: flex;
+    align-items: center;
+  }
+
+  .join-us-btn {
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+  }
+
+  .read-more-btn {
+    margin: 3% 2%;
+    width: 122px;
+    height: 50px;
+    border-radius: 15px;
+  }
+}
